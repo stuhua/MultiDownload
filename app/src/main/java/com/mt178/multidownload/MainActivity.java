@@ -45,7 +45,9 @@ public class MainActivity extends AppCompatActivity {
                     int code = conn.getResponseCode();
                     if (code == 200) {
                         int length = conn.getContentLength();//获取文件长度
-                        pb_downlaod.setMax(length);//设置progressbar的最大值
+
+                        pb_downlaod.setMax(length-1);//设置progressbar的最大值
+
                         //创建一个与服务器大小相等的文件
                         RandomAccessFile raf = new RandomAccessFile("/sdcard/qq.apk", "rw");
                         raf.setLength(length);
