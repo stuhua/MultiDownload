@@ -2,9 +2,9 @@
 
 ## 预览
 
-<img src="/show.png"/>
+<img src="/show.png" width="160px" height="266.5px" />
 </br>
-<img src="/showcmd.png"/>
+<img src="/showcmd.png" width="338px" height="221px" />
 
 ## 这个库是什么？
 
@@ -13,10 +13,6 @@
 ## 用来做什么？
 
 对于多线程问题，加深自己的理解
-
-## 鸣谢
-
-- [nineoldandroids](http://nineoldandroids.com/)
 
 ## 更多
 
