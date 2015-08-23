@@ -11,13 +11,13 @@
 
 
     <EditText
-        android:id="@+id/et_url"
+        android:id="@+id/et_path"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="请输入下载地址：" />
 
     <ProgressBar
-        android:id="@+id/progressBar"
+        android:id="@+id/pb_downlaod"
         style="?android:attr/progressBarStyleHorizontal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
