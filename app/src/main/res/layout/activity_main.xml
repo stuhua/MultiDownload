@@ -14,7 +14,8 @@
         android:id="@+id/et_path"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="请输入下载地址：" />
+        android:hint="请输入下载地址："
+        android:text="http://gdown.baidu.com/data/wisegame/fb3bba73b5437246/QQ_264.apk" />
 
     <ProgressBar
         android:id="@+id/pb_downlaod"

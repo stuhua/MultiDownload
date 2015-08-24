@@ -2,6 +2,7 @@ package com.mt178.multidownload;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.text.TextUtils;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -16,7 +17,7 @@ import java.net.HttpURLConnection;
 import java.net.URL;
 
 public class MainActivity extends AppCompatActivity {
-    public static final String path = "http://gdown.baidu.com/data/wisegame/fb3bba73b5437246/QQ_264.apk";
+    //    public static final String path = "http://gdown.baidu.com/data/wisegame/fb3bba73b5437246/QQ_264.apk";
     public static final int threadCount = 3;
     private ProgressBar pb_downlaod;
     private EditText et_path;
@@ -38,6 +39,10 @@ public class MainActivity extends AppCompatActivity {
             public void run() {
                 super.run();
                 try {
+                    String path = et_path.getText().toString().trim();
+                    if (TextUtils.isEmpty(path)) {
+                        return;
+                    }
                     URL url = new URL(path);
                     HttpURLConnection conn = (HttpURLConnection) url.openConnection();
                     conn.setReadTimeout(5000);//设置超时时间
